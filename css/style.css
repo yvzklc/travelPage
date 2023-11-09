@@ -8,12 +8,19 @@
 
 .home {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .home__image {
   width: 50%;
 }
+.home__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .header {
   display: flex;
   justify-content: space-between;

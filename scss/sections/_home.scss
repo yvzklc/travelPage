@@ -1,12 +1,12 @@
 // home
 @use "../abstracts/mixin" as *;
 .home{
-    @include flex(center);
+    @include flex(space-between);
     &__image{
         width: 50%;
     }
     &__form{
-
-
+     @include flex(center);
+     flex-direction: column;
     }
 }
