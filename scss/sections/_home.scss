@@ -1,20 +1,45 @@
 // home
 @use "../abstracts/mixin" as *;
-.home{
-    @include flex(space-between);
-    &__image{
-        width: 50%;
+@use "../abstracts/variables" as v;
+.home {
+  @include flex(center);
+  gap: 1.3rem;
+  &__image {
+    width: 40%;
+  }
+
+  &__form {
+    @include flex(center, flex-start);
+    flex-direction: column;
+    gap: 0.7rem;
+    h2 {
+      @include setFont("Playfair Display", 700, 4rem, 80px);
+      color: v.$headerColor;
     }
-    &__form{
-        h2{
-         @include setFont("Playfair Display",700,4rem,80px);   
-        }
-        h3{
-            @include setFont("Inter",600,1.4rem,27px);
-        }
-        form{
-     @include flex(center);
-     flex-direction: column;
+
+    h3 {
+      @include setFont("Inter", 600, 1.4rem, 27px);
+      color: v.$headerColor;
     }
-}
+
+    hr {
+      width: 2rem;
+      border: 1px solid;
+    }
+    form {
+      @include flex(space-between);
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      select {
+        width: 48%;
+        border-radius: 6px;
+        padding: 0.5rem;
+        @include setFont("Inter", 400, 1rem, auto);
+        color: v.$fontColor;
+      }
+    }
+    &--button {
+      @include btn(1.6rem, 0.3rem, v.$mainColor, v.$btnBorderColor);
+    }
+  }
 }

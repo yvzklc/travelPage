@@ -8,29 +8,68 @@
 
 .home {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 1.3rem;
 }
 .home__image {
-  width: 50%;
+  width: 40%;
+}
+.home__form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.7rem;
 }
 .home__form h2 {
   font-family: "Playfair Display";
   font-weight: 700;
   font-size: 4rem;
   line-height: 80px;
+  color: #202336;
 }
 .home__form h3 {
   font-family: "Inter";
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 27px;
+  color: #202336;
+}
+.home__form hr {
+  width: 2rem;
+  border: 1px solid;
 }
 .home__form form {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.home__form form select {
+  width: 48%;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: auto;
+  color: #4a4c53;
+}
+.home__form--button {
+  border: 1px solid #fb8f1d;
+  color: #ffffff;
+  background-color: #fb8f1d;
+  border-radius: 8px;
+  padding: 0.3rem 1.6rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: auto;
+}
+.home__form--button:hover {
+  opacity: 0.6;
 }
 
 .header {
