@@ -1,1 +1,19 @@
 // responsive 
+@use "../abstracts/mixin" as *;
+
+@include media-sm{
+    .header{
+        justify-content: flex-end;
+        &__links,
+        &__logo{
+            display: none;
+        }
+        i{
+            display: inline-block;
+            padding-right: 1rem;
+        }
+        .show{
+            
+        }
+    }
+}
