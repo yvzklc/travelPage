@@ -14,7 +14,19 @@
 .home__image {
   width: 50%;
 }
-.home__form {
+.home__form h2 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 80px;
+}
+.home__form h3 {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 27px;
+}
+.home__form form {
   display: flex;
   justify-content: center;
   align-items: center;

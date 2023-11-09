@@ -6,7 +6,15 @@
         width: 50%;
     }
     &__form{
+        h2{
+         @include setFont("Playfair Display",700,4rem,80px);   
+        }
+        h3{
+            @include setFont("Inter",600,1.4rem,27px);
+        }
+        form{
      @include flex(center);
      flex-direction: column;
     }
+}
 }
