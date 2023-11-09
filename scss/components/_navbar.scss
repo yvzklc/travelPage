@@ -14,16 +14,18 @@
   &__links {
     display: flex;
     list-style-type: none;
-    @include flex(space-between,center);
+    @include flex(space-between, center);
     gap: 0.5rem;
     padding: 1rem 0;
-    &--home{
-        color: v.$headerColor;
-        border: none;
-        background-color: v.$mainColor;
+    &--home {
+      color: v.$headerColor;
+      border: none;
+      background-color: v.$mainColor;
+      @include setFont("Inter",100,1rem,19px);
     }
-    &--disabled{
-        color: #b8becd;
+    &--disabled {
+      @extend .header__links--home;
+      color: #b8becd;
     }
   }
 }
