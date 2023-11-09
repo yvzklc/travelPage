@@ -134,8 +134,10 @@
   opacity: 0.6;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .header {
+    display: block;
+    text-align: right;
     justify-content: flex-end;
   }
   .header__links, .header__logo {
@@ -144,6 +146,12 @@
   .header i {
     display: inline-block;
     padding-right: 1rem;
+  }
+  .header .show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 body {

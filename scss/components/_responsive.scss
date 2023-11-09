@@ -3,6 +3,8 @@
 
 @include media-sm{
     .header{
+        display: block;
+        text-align: right;
         justify-content: flex-end;
         &__links,
         &__logo{
@@ -13,7 +15,8 @@
             padding-right: 1rem;
         }
         .show{
-            
+        @include flex(center,center);
+        flex-direction: column;
         }
     }
 }
