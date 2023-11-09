@@ -1,29 +1,29 @@
 // mixin
 @use "../abstracts/variables" as v;
 
-@mixin flex($js,$ai){
-    display: flex;
-    justify-content: $js;
-    align-items: $ai;
+@mixin flex($jc, $ai: center) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
 }
 
 @mixin setFont($ff, $fw, $fs, $lh) {
-    font-family: $ff;
-    font-weight: $fw;
-    font-size: $fs;
-    line-height: $lh;
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
 }
 
 @mixin btn($px, $py, $color, $bg) {
-    border: 1px solid v.$btnBorderColor;
-    color: $color;
-    background-color: $bg;
-    border-radius: 8px;
-    //   padding-inline: $px; //? x ekseni
-    //   padding-block: $py; //? y eksini
-    padding: $py $px;
-    @include setFont("Inter", 500, 1rem, auto);
-    &:hover {
-      opacity: 0.6;
-    }
+  border: 1px solid v.$btnBorderColor;
+  color: $color;
+  background-color: $bg;
+  border-radius: 8px;
+  //   padding-inline: $px; //? x ekseni
+  //   padding-block: $py; //? y eksini
+  padding: $py $px;
+  @include setFont("Inter", 500, 1rem, auto);
+  &:hover {
+    opacity: 0.6;
   }
+}

@@ -1,6 +1,7 @@
 // main 
 @use "./abstracts/variables" as v;
 @use "./base/reset";
+@use "./sections/home";
 @use "./components/navbar";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Mulish&family=Playfair+Display&family=Rampart+One&display=swap");
