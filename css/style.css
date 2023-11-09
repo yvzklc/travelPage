@@ -1,3 +1,32 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Mulish&family=Playfair+Display&family=Rampart+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.header__logo {
+  width: 50px;
+  height: 50px;
+}
+.header i {
+  display: none;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1350px;
+  margin: auto;
+  padding: 1rem;
+}
+
+button,
+i {
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style.css.map */
