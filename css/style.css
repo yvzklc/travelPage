@@ -21,6 +21,19 @@
 .header__links {
   display: flex;
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+.header__links--home {
+  color: #202336;
+  border: none;
+  background-color: #ffffff;
+}
+.header__links--disabled {
+  color: #b8becd;
 }
 
 body {

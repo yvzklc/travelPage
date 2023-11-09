@@ -1,17 +1,29 @@
 // navbar
 @use "../abstracts/mixin" as *;
+@use "../abstracts/variables" as v;
 
-.header{
+.header {
+  @include flex(space-between, center);
+  &__logo {
+    width: 50px;
+    height: 50px;
+  }
+  i {
+    display: none;
+  }
+  &__links {
+    display: flex;
+    list-style-type: none;
     @include flex(space-between,center);
-    &__logo{
-        width: 50px;
-        height: 50px;
+    gap: 0.5rem;
+    padding: 1rem 0;
+    &--home{
+        color: v.$headerColor;
+        border: none;
+        background-color: v.$mainColor;
     }
-    i{
-        display: none;
+    &--disabled{
+        color: #b8becd;
     }
-    &__links{
-        display: flex;
-        list-style-type: none;
-    }
+  }
 }
